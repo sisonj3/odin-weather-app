@@ -1,1 +1,3 @@
-console.log('Starting Program...');
+import "./style.css";
+
+console.log("Starting Program...");
