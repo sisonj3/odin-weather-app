@@ -1,6 +1,16 @@
 import "./style.css";
-import getWeatherData from './weather-data';
+import displayWeather from './weather-display';
 
 console.log("Starting Program...");
 
-getWeatherData('london');
+// Search bar
+const search = document.querySelector('input');
+
+search.addEventListener('keydown', (e) => {
+    if (e.key == 'Enter'){
+        console.log('Displaying Weather Data...');
+        displayWeather(search.value);
+    }
+})
+
+displayWeather('London');
