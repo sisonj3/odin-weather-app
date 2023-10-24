@@ -4,7 +4,7 @@ import displayWeather from './weather-display';
 console.log("Starting Program...");
 
 // Search bar
-const search = document.querySelector('input');
+const search = document.querySelector('.search');
 
 search.addEventListener('keydown', (e) => {
     if (e.key == 'Enter'){
